@@ -21,3 +21,10 @@ jobs:
           get_type: both
           count: 10
           if_only_pic: true
+
+      -name: Force-push to branch data
+        uses: dfm/force-push-branch-action@v1
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          path: ${{secrets.GITHUB_WORKSPACE}}/output
+          target-branch: data
