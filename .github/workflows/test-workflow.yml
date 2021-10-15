@@ -22,7 +22,7 @@ jobs:
           count: 10
           if_only_pic: true
 
-      -name: Force-push to branch data
+      - name: Force-push to branch data
         uses: dfm/force-push-branch-action@v1
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
