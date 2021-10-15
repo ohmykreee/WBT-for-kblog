@@ -1,0 +1,23 @@
+name: Test the function of Wolf-Bites-Tweets
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Run WBT
+        uses: ohmykreee/wolf-bites-tweets
+        with:
+          screen_name: kreeejiang
+          bearer_token: ${{ secrets.BEARER_TOKEN }}
+          get_type: both
+          count: 10
+          if_only_pic: true
