@@ -18,7 +18,7 @@ jobs:
         with:
           screen_name: kreeejiang
           bearer_token: ${{ secrets.BEARER_TOKEN }}
-          get_type: both
+          get_type: likes
           count: 10
           if_only_pic: true
 
@@ -26,5 +26,5 @@ jobs:
         uses: dfm/force-push-branch-action@v1
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-          path: ${{secrets.GITHUB_WORKSPACE}}/output
+          path: output
           target-branch: data
