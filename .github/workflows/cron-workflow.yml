@@ -1,9 +1,8 @@
-name: Test the function of Wolf-Bites-Tweets
+name: Weekly run of wolf-bites-tweets
 
 on:
-  push:
-    branches:
-      - dev
+  schedule:
+    - cron:  '0 0 * * 1'
 
 jobs:
 
@@ -18,8 +17,8 @@ jobs:
         with:
           screen_name: kreeejiang
           bearer_token: ${{ secrets.BEARER_TOKEN }}
-          get_type: both
-          count: 10
+          get_type: likes
+          count: 50
           if_only_pic: true
 
       - name: Force-push to branch "data"
