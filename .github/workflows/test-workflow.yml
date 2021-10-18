@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Run WBT
-        uses: ohmykreee/wolf-bites-tweets@1.0.0
+        uses: ohmykreee/wolf-bites-tweets@1.0.5
         with:
           screen_name: kreeejiang
           bearer_token: ${{ secrets.BEARER_TOKEN }}
@@ -28,4 +28,4 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           path: output
-          target-branch: data
+          target-branch: data-dev
