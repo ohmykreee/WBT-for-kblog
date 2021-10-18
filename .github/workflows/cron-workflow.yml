@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Run WBT
-        uses: ohmykreee/wolf-bites-tweets@1.0.0
+        uses: ohmykreee/wolf-bites-tweets@1.0.5
         with:
           screen_name: kreeejiang
           bearer_token: ${{ secrets.BEARER_TOKEN }}
