@@ -14,15 +14,15 @@ jobs:
         uses: actions/checkout@master
 
       - name: Run WBT
-        uses: ohmykreee/wolf-bites-tweets@1.0.7
+        uses: ohmykreee/wolf-bites-tweets@2.0.0
         with:
-          screen_name: kreeejiang
-          bearer_token: ${{ secrets.BEARER_TOKEN }}
-          get_type: both
+          screen-name: kreeejiang
+          bearer-token: ${{ secrets.BEARER_TOKEN }}
+          get-type: both
           count: 10,15
-          if_only_media: false
+          if-only-media: false
 
-      - name: Force-push to branch "data"
+      - name: Force-push to branch "data-dev"
         if: success()
         uses: dfm/force-push-branch-action@v1
         with:

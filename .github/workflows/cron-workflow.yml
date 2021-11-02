@@ -13,13 +13,13 @@ jobs:
         uses: actions/checkout@master
 
       - name: Run WBT
-        uses: ohmykreee/wolf-bites-tweets@1.0.7
+        uses: ohmykreee/wolf-bites-tweets@2.0.0
         with:
-          screen_name: kreeejiang
-          bearer_token: ${{ secrets.BEARER_TOKEN }}
-          get_type: likes
-          count: 50
-          if_only_media: true
+          screen-name: kreeejiang
+          bearer-token: ${{ secrets.BEARER_TOKEN }}
+          get-type: likes
+          count: 50,50
+          if-only-media: true
 
       - name: Force-push to branch "data"
         if: success()
