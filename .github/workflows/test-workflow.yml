@@ -19,7 +19,7 @@ jobs:
           screen-name: kreeejiang
           bearer-token: ${{ secrets.BEARER_TOKEN }}
           get-type: both
-          count: 10,15
+          count: 20,20
           if-only-media: false
 
       - name: Force-push to branch "data-dev"
