@@ -27,5 +27,5 @@ jobs:
         uses: dfm/force-push-branch-action@v1
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-          path: output
+          path: output/
           target-branch: data-dev
