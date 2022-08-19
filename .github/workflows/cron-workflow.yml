@@ -1,6 +1,7 @@
 name: Weekly run of wolf-bites-tweets
 
 on:
+  workflow_dispatch:
   schedule:
     - cron:  '0 0 * * 1'
 

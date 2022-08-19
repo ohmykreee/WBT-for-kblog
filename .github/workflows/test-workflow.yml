@@ -1,7 +1,6 @@
 name: Test the function of Wolf-Bites-Tweets
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - dev
