@@ -1,3 +1,8 @@
+# !! Project Archived !!
+Due to the new policy of Twitter API, there are no free version of Twitter API avaliable. This project is in a archive status. 
+
+-----
+
 # Wolf-Bites-Tweets for Kreee's Blog
 This is a weekly running [wolf-bites-tweets](https://github.com/ohmykreee/wolf-bites-tweets) for [Kreee's Blog](https://blog.ohmykreee.top).
 
